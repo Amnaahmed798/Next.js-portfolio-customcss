@@ -50,11 +50,11 @@ const Header = () => {
      
         <Sheet>
           <SheetTrigger asChild>
-          <Button className="text-2xl ">&#9776;</Button>
+          <Button className="text-2xl  ">&#9776;</Button>
           </SheetTrigger>
-          <SheetContent side="right">
+          <SheetContent side="right" className="bg-white">
             <SheetHeader>
-              <SheetTitle>Menu</SheetTitle>
+              <SheetTitle className="text-black">Menu</SheetTitle>
               <SheetDescription>
                 <ul className="flex flex-col gap-4 text-black">
                   <li>
