@@ -1,0 +1,114 @@
+/* Base styles for the header */
+/* Base styles for the header */
+.header {
+  background-color: white;
+  color: black;
+  padding: 1rem 2rem;
+  position: relative; /* To ensure that the navbar positioning works correctly */
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%; /* Ensure it takes full width */
+}
+
+.portfolioLink {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* Ensure that the items wrap if there is not enough space */
+}
+
+.navList {
+  display: flex;
+  gap: 1.5rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navList li {
+  /* Ensure each list item is spaced out evenly */
+  flex-shrink: 0; /* Prevent items from shrinking */
+}
+
+.navList li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.navList li a:hover {
+  color: #f2a900; /* Hover effect for links */
+}
+
+/* Mobile navbar styles */
+.mobileNavbar {
+  display: none;
+}
+
+/* Hamburger button styles */
+.hamburgerBtn {
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+
+/* Mobile menu styles */
+.mobileMenu {
+  background-color: white;
+  position: absolute;
+  top: 80px; /* Adjust this based on your header height */
+  right: 0;
+  width: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.mobileNavList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.mobileNavList li a {
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.5rem 0;
+  display: block;
+}
+
+.mobileNavList li a:hover {
+  color: #f2a900; /* Hover effect for links */
+}
+
+/* Media Query for mobile responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    display: none; /* Hide desktop navbar */
+  }
+
+  .mobileNavbar {
+    display: block; /* Show hamburger menu on mobile */
+  }
+}
+
+@media (min-width: 769px) {
+  .mobileNavbar {
+    display: none;
+  }
+}

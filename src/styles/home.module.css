@@ -1,0 +1,95 @@
+/* styles.css */
+
+/* Container for the Home page */
+.homeContainer {
+    width: 100%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: black; /* Light gray background */
+  }
+  
+  /* Flex container to align text and image */
+  .homeContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .homeContentLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    color: #eeeaea;
+  }
+  
+  .homeContentLeft h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #eeeaea;
+  }
+  
+  .homeContentLeft h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #67a9f5; /* Red color */
+  }
+  
+  .homeContentLeft p {
+    font-size: 1rem;
+    color: #eeeaea;
+  }
+  
+  .homeContentLeft .downloadBtn {
+    background-color: #67a9f5; /* Red color */
+    color: white;
+    font-weight: 600;
+    border: 2px solid black;
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .homeContentLeft .downloadBtn:hover {
+    background-color: #fff;
+    color: #b83c3c;
+    border-color: #b83c3c;
+  }
+  
+  /* Social icons section */
+  .socialIcons {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .socialIcons a {
+    font-size: 2rem;
+    color: #f3ecec;
+    transition: color 0.3s ease;
+  }
+  
+  .socialIcons a:hover {
+    color: #3b5998; /* Blue color for Facebook */
+  }
+  
+  /* Right section with the image */
+  .homeContentRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    max-width: 400px;
+  }
+  
+  .homeContentRight img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  

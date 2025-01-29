@@ -1,17 +1,18 @@
 // components/Footer.tsx
 import React from "react";
-import { FaGithub, FaLinkedin, } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
+import styles from "./Footer.module.css"; // Import the CSS module
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-12">
-      <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+    <footer className={styles.footer}>
+      <div className={styles.container}>
+        <div className={styles.grid}>
           {/* Left section: About/Contact */}
           <div>
-            <h3 className="text-2xl font-semibold mb-4">About Me</h3>
-            <p className="text-gray-400">
+            <h3 className={styles.title}>About Me</h3>
+            <p className={styles.text}>
               Passionate about coding, web development, and creating intuitive
               user experiences. Let&apos;s connect and build something amazing!
             </p>
@@ -19,35 +20,35 @@ const Footer = () => {
 
           {/* Center section: Links */}
           <div>
-            <h3 className="text-2xl font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-            <li>
-                <a href="/" className=" hover:text-blue-500">
+            <h3 className={styles.title}>Quick Links</h3>
+            <ul className={styles.linkList}>
+              <li>
+                <a href="/" className={styles.link}>
                   Home
                 </a>
               </li>
-            <li>
-                <a href="aboutme" className="hover:text-blue-500">
-                  About me
+              <li>
+                <a href="/aboutme" className={styles.link}>
+                  About Me
                 </a>
               </li>
-            <li>
-                <a href="services" className="hover:text-blue-500">
+              <li>
+                <a href="/services" className={styles.link}>
                   Services
                 </a>
               </li>
               <li>
-                <a href="skills" className="hover:text-blue-500">
+                <a href="/skills" className={styles.link}>
                   Skills
                 </a>
               </li>
               <li>
-                <a href="projects" className="hover:text-blue-500">
+                <a href="/projects" className={styles.link}>
                   Projects
                 </a>
               </li>
               <li>
-                <a href="contactme" className="hover:text-blue-500">
+                <a href="/contactme" className={styles.link}>
                   Contact
                 </a>
               </li>
@@ -55,39 +56,37 @@ const Footer = () => {
           </div>
 
           {/* Right section: Social Links */}
-          <div className="sign space-x-6 flex justify-center mt-6">
-                      <a
-                        href="https://www.facebook.com/profile.php?id=100041603694364"
-                        className="text-3xl text-white hover:text-blue-600"
-                      >
-                        <FaFacebookSquare />
-                      </a>
-                      <a
-                        href="https://instagram.com/amnaahmed798"
-                        className="text-3xl text-white hover:text-pink-600"
-                      >
-                        <FaInstagram />
-                      </a>
-                      <a
-                        href="https://github.com/Amnaahmed798"
-                        className="text-3xl text-white hover:text-black"
-                      >
-                        <FaGithub />
-                      </a>
-                      <a
-                        href="https://www.linkedin.com/in/amna-ahmed-783929282/"
-                        className="text-3xl text-white hover:text-blue-600"
-                      >
-                        <FaLinkedin />
-                      </a>
-                    </div>
-                    </div>
+          <div className={styles.socialIcons}>
+            <a
+              href="https://www.facebook.com/profile.php?id=100041603694364"
+              className={`${styles.icon} ${styles.facebook}`}
+            >
+              <FaFacebookSquare />
+            </a>
+            <a
+              href="https://instagram.com/amnaahmed798"
+              className={`${styles.icon} ${styles.instagram}`}
+            >
+              <FaInstagram />
+            </a>
+            <a
+              href="https://github.com/Amnaahmed798"
+              className={`${styles.icon} ${styles.github}`}
+            >
+              <FaGithub />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/amna-ahmed-783929282/"
+              className={`${styles.icon} ${styles.linkedin}`}
+            >
+              <FaLinkedin />
+            </a>
+          </div>
+        </div>
 
         {/* Bottom section: Copyright */}
-        <div className="mt-12 border-t border-gray-700 pt-8 text-center">
-          <p className="text-gray-400">
-            &copy; {new Date().getFullYear()} Amna Ahmed. All rights reserved.
-          </p>
+        <div className={styles.copyright}>
+          <p>&copy; {new Date().getFullYear()} Amna Ahmed. All rights reserved.</p>
         </div>
       </div>
     </footer>

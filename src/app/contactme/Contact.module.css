@@ -1,0 +1,101 @@
+.contactContainer {
+    padding: 40px 20px;
+    background-color: #141414;
+  }
+  
+  .contactText {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .subTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fbfdff;
+  }
+  
+  .highlight {
+    color: #facc15;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #fbfdff;
+  }
+  
+  .emailLink,
+  .linkedInLink {
+    color: #2563eb;
+    text-decoration: none;
+  }
+  
+  .contactInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .phone,
+  .email {
+    font-size: 1.2rem;
+    color: #eaedf1;
+    margin: 5px 0;
+  }
+  
+  .socialLinks {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .socialLinks a {
+    font-size: 1.8rem;
+    color: #eef0f3;
+    transition: color 0.3s;
+  }
+  
+  .socialLinks a:hover {
+    color: #1d4ed8;
+  }
+  
+  .contactFormContainer {
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .inputField,
+  .textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+  }
+  
+  .textarea {
+    height: 100px;
+  }
+  
+  .submitButton {
+    width: 100%;
+    padding: 10px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submitButton:hover {
+    background-color: #1e40af;
+  }
+  
