@@ -1,10 +1,11 @@
 /* Base styles for the header */
 /* Base styles for the header */
 .header {
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
   padding: 1rem 2rem;
   position: relative; /* To ensure that the navbar positioning works correctly */
+  border: 2px solid black;
 }
 
 .headerContainer {
@@ -18,9 +19,14 @@
 
 .portfolioLink {
   font-size: 30px;
-  font-weight: bold;
+  font-weight: bolder;
   text-align: center;
-  color: black;
+  color: white !important;
+}
+
+.portfolioLink a {
+  text-decoration: none;
+  color: white !important;
 }
 
 .navbar {
@@ -44,9 +50,9 @@
 
 .navList li a {
   text-decoration: none;
-  color: black;
-  font-size: 18px;
-  font-weight: 500;
+  color: white !important;
+  font-size: 20px;
+  font-weight: normal;
 }
 
 .navList li a:hover {

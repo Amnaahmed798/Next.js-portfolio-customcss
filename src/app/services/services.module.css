@@ -1,6 +1,7 @@
 .servicesContainer {
     padding: 3rem 0;
-    background-color: #161616;
+    background-color: #08070c; /* Deep Purple Gray */
+    color: #F3F4F6; /* Very Light Gray */
   }
   
   .servicesContent {
@@ -13,12 +14,13 @@
     text-align: center;
     font-size: 2rem;
     font-weight: 600;
-    color: #f4f6fa;
+    color: #F3F4F6; /* Very Light Gray */
     margin-bottom: 2rem;
+    animation: fadeIn 1.5s ease-in-out;
   }
   
   .highlight {
-    color: #e53e3e;
+    color: #fd4343;
   }
   
   .servicesGrid {
@@ -33,10 +35,13 @@
     border-radius: 0.5rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    animation: fadeInUp 0.8s ease forwards;
+    opacity: 0;
   }
   
   .serviceItem:hover {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transform: scale(1.05);
   }
   
   .serviceIcon {
@@ -69,5 +74,40 @@
   
   .serviceLink:hover {
     text-decoration: underline;
+  }
+  
+  .servicesText {
+    color: #F3F4F6; /* Very Light Gray */
+  }
+  
+  .servicesButton {
+    background-color: #8B5CF6; /* Indigo Purple */
+    color: #1E1B2E; /* Deep Purple Gray */
+  }
+  
+  .servicesButton:hover {
+    background-color: #C084FC; /* Light Purple */
+  }
+  
+  @keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
   }
   

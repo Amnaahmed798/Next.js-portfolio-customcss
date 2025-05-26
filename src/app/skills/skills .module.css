@@ -15,6 +15,18 @@
     text-align: center;
     color: #f3f5f8;
     margin-bottom: 2rem;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
   }
   
   .skillList {
@@ -32,6 +44,16 @@
   .icon {
     font-size: 2.5rem;
     color: #edf2f7;
+    animation: scale 2s ease-in-out infinite;
+  }
+  
+  @keyframes scale {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
   }
   
   .skillContent {
@@ -60,6 +82,21 @@
     height: 8px;
     border-radius: 9999px;
     transition: width 0.7s ease;
+    background: linear-gradient(270deg, #f56b2a, #4299e1, #ecc94b, #48bb78);
+    background-size: 400% 400%;
+    animation: gradientShift 5s ease infinite;
+  }
+  
+  @keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
   }
   
   .animateWidth80 {
@@ -83,7 +120,6 @@
   }
   
   .skillPercentage {
-
     right: 0;
     top: 0;
     font-size: 0.875rem;

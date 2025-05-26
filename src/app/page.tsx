@@ -57,7 +57,7 @@ const Home = () => {
         {/* Right Section (Image) */}
         <div className={styles.homeContentRight}>
           <Image
-            src="/images"
+            src="/images/profile.img"
             alt="Hello"
             className={styles.profileImage}
             width={400}

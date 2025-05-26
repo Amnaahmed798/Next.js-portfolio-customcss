@@ -5,91 +5,105 @@
     width: 100%;
     padding-top: 4rem;
     padding-bottom: 4rem;
-    background-color: black; /* Light gray background */
+    background-color: #1E1B2E; /* Deep Purple Gray */
   }
   
   /* Flex container to align text and image */
   .homeContent {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
-    gap: 1rem;
+    text-align: left;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: auto;
   }
   
   .homeContentLeft {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-    color: #eeeaea;
+    align-items: flex-start;
+    color: #F3F4F6; /* Very Light Gray */
+    margin-left: 2rem;
   }
   
   .homeContentLeft h1 {
-    font-size: 2rem;
+    font-size: 3.5rem;
     font-weight: 700;
-    color: #eeeaea;
+    color: #F3F4F6; /* Very Light Gray */
   }
   
   .homeContentLeft h4 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #67a9f5; /* Red color */
-  }
-  
-  .homeContentLeft p {
-    font-size: 1rem;
-    color: #eeeaea;
-  }
-  
-  .homeContentLeft .downloadBtn {
-    background-color: #67a9f5; /* Red color */
-    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ccc;
+    margin-bottom: 1rem;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.homeContentLeft p {
+    font-size: 1.8rem;
+    color: #F3F4F6; /* Very Light Gray */
+    max-width: 600px;
+    animation: fadeIn 1.4s ease-in-out;
+}
+
+.homeContentLeft .downloadBtn {
+    background-color: #8B5CF6; /* Indigo Purple */
+    color: #1E1B2E; /* Deep Purple Gray */
     font-weight: 600;
-    border: 2px solid black;
+    border: none;
     margin-top: 1rem;
-    padding: 0.5rem 2rem;
-    border-radius: 9999px;
+    padding: 0.75rem 2.5rem;
+    border-radius: 5px;
     cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .homeContentLeft .downloadBtn:hover {
-    background-color: #fff;
-    color: #b83c3c;
-    border-color: #b83c3c;
-  }
-  
-  /* Social icons section */
-  .socialIcons {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.6s ease-in-out;
+}
+
+.homeContentLeft .downloadBtn:hover {
+    background-color: #C084FC; /* Light Purple */
+    transform: translateY(-3px);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Social icons section */
+.socialIcons {
     display: flex;
     gap: 1.5rem;
     margin-top: 1.5rem;
-  }
-  
-  .socialIcons a {
+}
+
+.socialIcons a {
     font-size: 2rem;
-    color: #f3ecec;
-    transition: color 0.3s ease;
-  }
-  
-  .socialIcons a:hover {
-    color: #3b5998; /* Blue color for Facebook */
-  }
-  
-  /* Right section with the image */
-  .homeContentRight {
+    color: #8B5CF6; /* Indigo Purple */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.socialIcons a:hover {
+    color: #C084FC; /* Light Purple */
+    transform: scale(1.1);
+}
+
+/* Right section with the image */
+.homeContentRight {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     max-width: 400px;
-  }
-  
-  .homeContentRight img {
+}
+
+.homeContentRight img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
-  }
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
   

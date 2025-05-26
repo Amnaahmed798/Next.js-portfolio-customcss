@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './About.module.css'; // Ensure this path matches your project structure
+import styles from './aboutme.module.css'; // Ensure this path matches your project structure
 
 const AboutMe = () => {
   return (

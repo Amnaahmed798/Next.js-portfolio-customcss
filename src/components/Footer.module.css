@@ -1,9 +1,10 @@
 /* Footer.module.css */
 
 .footer {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     padding: 50px 0;
+    border: 2px solid black;
   }
   
   .container {
@@ -20,14 +21,16 @@
   }
   
   .title {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.75rem;
+    font-weight: 600;
     margin-bottom: 15px;
+    color: white !important;
   }
   
   .text {
-    color: #181717;
-    font-size: 1rem;
+    color: white !important;
+    font-size: 1.1rem;
+    font-weight: 400;
   }
   
   /* Quick Links */
@@ -37,9 +40,10 @@
   }
   
   .link {
-    color: rgb(19, 18, 18);
+    color: white !important;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    font-weight: 400;
     display: block;
     transition: color 0.3s;
   }
@@ -62,19 +66,19 @@
   }
   
   .facebook:hover {
-    color: #1877f2;
+    color: #ff9999;
   }
   
   .instagram:hover {
-    color: #e1306c;
+    color: #ff9999;
   }
   
   .github:hover {
-    color: #333;
+    color: #ff9999;
   }
   
   .linkedin:hover {
-    color: #0a66c2;
+    color: #ff9999;
   }
   
   /* Copyright Section */
@@ -82,8 +86,9 @@
     border-top: 1px solid #444;
     padding-top: 20px;
     margin-top: 30px;
-    font-size: 0.9rem;
-    color: #b0b0b0;
+    font-size: 1rem;
+    color: white !important;
+    font-weight: 400;
   }
   
   /* Responsive Design */
