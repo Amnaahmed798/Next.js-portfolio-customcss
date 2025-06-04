@@ -30,6 +30,7 @@ const Navbar = () => {
             <li><Link href="/" onClick={() => setIsOpen(false)}>Home</Link></li>
             <li><Link href="/aboutme" onClick={() => setIsOpen(false)}>About</Link></li>
             <li><Link href="/services" onClick={() => setIsOpen(false)}>Services</Link></li>
+            <li><Link href="/projects" onClick={() => setIsOpen(false)}>Projects</Link></li>
             <li><Link href="/skills" onClick={() => setIsOpen(false)}>Skills</Link></li>
             <li><Link href="/contactme" onClick={() => setIsOpen(false)}>Contact</Link></li>
           </ul>
