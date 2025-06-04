@@ -1,6 +1,6 @@
 .contactContainer {
     padding: 40px 20px;
-    background-color:  #1E1B2E;
+    background-color:  #070707;
   }
   
   .contactText {
@@ -124,6 +124,24 @@
     }
     to {
         opacity: 1;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .contactContainer {
+      padding: 20px 10px;
+    }
+
+    .subTitle {
+      font-size: 1.5rem;
+    }
+
+    .description {
+      font-size: 0.9rem;
+    }
+
+    .phone, .email {
+      font-size: 1rem;
     }
   }
   

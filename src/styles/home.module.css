@@ -5,7 +5,7 @@
     width: 100%;
     padding-top: 4rem;
     padding-bottom: 4rem;
-    background-color: #1E1B2E; /* Deep Purple Gray */
+    background-color: #000000; /* Deep Purple Gray */
   }
   
   /* Flex container to align text and image */
@@ -15,8 +15,8 @@
     justify-content: space-between;
     align-items: center;
     text-align: left;
-    gap: 2rem;
-    max-width: 1200px;
+    gap: 1.5rem;
+    max-width: 1000px;
     margin: auto;
   }
   
@@ -29,9 +29,10 @@
   }
   
   .homeContentLeft h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem; /* Adjust font size to fit on one line */
     font-weight: 700;
     color: #F3F4F6; /* Very Light Gray */
+    white-space: nowrap; /* Prevent text from wrapping */
   }
   
   .homeContentLeft h4 {
@@ -96,14 +97,58 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    max-width: none; /* Remove max-width constraint */
     margin-top: 2rem;
-    max-width: 400px;
 }
 
 .homeContentRight img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
+    width: 300px; /* Set fixed width */
+    height: 300px; /* Set fixed height to match width */
+    border-radius: 50%; /* Make the image circular */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profileImage {
+    max-width: 350px; /* Set maximum width */
+    max-height: 350px; /* Set maximum height to match width */
+    width: 100%; /* Ensure full width within container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make the image circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.homeContentLeft .introText {
+    font-size: 2rem; /* Increase font size for 'Hello, it's me' */
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .homeContent {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  .homeContentLeft {
+    margin-left: 0;
+  }
+
+  .homeContentRight {
+    margin-top: 2rem;
+  }
+
+  .homeContentRight img {
+    width: 100%; /* Full size within container for small screens */
+    height: auto;
+  }
+
+  .homeContentLeft h1 {
+    font-size: 2.5rem;
+  }
+
+  .homeContentLeft h4, .homeContentLeft p {
+    font-size: 1.2rem;
+  }
 }
   

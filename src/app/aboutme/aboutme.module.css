@@ -1,5 +1,5 @@
 .aboutContainer {
-    background-color: #1E1B2E;
+    background-color: #050505;
     color: #F3F4F6;
     padding: 60px 30px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
@@ -63,5 +63,23 @@
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .aboutContainer {
+    padding: 30px 15px;
+  }
+
+  .aboutTitle {
+    font-size: 2rem;
+  }
+
+  .aboutSubtitle {
+    font-size: 1.2rem;
+  }
+
+  .aboutDescription {
+    font-size: 0.9rem;
+  }
 }
   

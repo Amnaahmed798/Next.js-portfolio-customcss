@@ -1,6 +1,6 @@
 .projectsSection {
     padding: 4rem 0;
-    background-color: #18191a;
+    background-color: #0a0a0a;
   }
   
   .container {
@@ -98,4 +98,24 @@
         transform: translateY(0);
     }
   }
+  @media (max-width: 768px) {
+    .projectsContainer {
+      padding: 20px 10px;
+    }
   
+    .projectsTitle {
+      font-size: 1.5rem;
+    }
+  
+    .projectItem {
+      padding: 1rem;
+    }
+  
+    .projectTitle {
+      font-size: 1.2rem;
+    }
+  
+    .projectDescription {
+      font-size: 0.9rem;
+    }
+  } 

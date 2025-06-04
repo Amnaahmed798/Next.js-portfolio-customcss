@@ -127,3 +127,25 @@
     color: #fbfcfd;
   }
   
+  @media (max-width: 768px) {
+    .skillsSection {
+      padding: 20px 10px;
+    }
+
+    .title {
+      font-size: 1.5rem;
+    }
+
+    .skillItem {
+      gap: 1rem;
+    }
+
+    .icon {
+      font-size: 2rem;
+    }
+
+    .skillName {
+      font-size: 1rem;
+    }
+  }
+  

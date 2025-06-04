@@ -1,88 +1,42 @@
 "use client";
-import { useState } from "react"; // Import React hooks
-import { Button } from "@/components/ui/button";
+
+import { useState } from "react";
 import Link from "next/link";
-import styles from "./Header.module.css"; // Import the CSS module
+import styles from "./Header.module.css";
 
-const Header = () => {
-  // State to track the visibility of the mobile menu
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
-  // Function to toggle the menu visibility
-  const toggleMenu = () => {
-    setIsMenuOpen((prevState) => !prevState);
-  };
+  const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <div className={styles.header}>
-      <div className={styles.headerContainer}>
-        {/* Portfolio Link */}
-        <div className={styles.portfolioLink}>
+    <header className={styles.header}>
+      <div className={styles.container}>
+        {/* Logo */}
+        <div className={styles.logo}>
           <Link href="/">Portfolio</Link>
         </div>
 
-        {/* Desktop Navbar (Visible on larger screens) */}
-        <div className={styles.navbar}>
-          <ul className={styles.navList}>
-            <li>
-              <Link href="/">Home</Link>
-            </li>
-            <li>
-              <Link href="/aboutme">About Me</Link>
-            </li>
-            <li>
-              <Link href="/services">Services</Link>
-            </li>
-            <li>
-              <Link href="/skills">Skills</Link>
-            </li>
-            <li>
-              <Link href="/projects">Projects</Link>
-            </li>
-            <li>
-              <Link href="/contactme">Contact</Link>
-            </li>
+        {/* Hamburger Button */}
+        <button className={styles.hamburger} onClick={toggleMenu}>
+          <span className={isOpen ? styles.barActive : styles.bar}></span>
+          <span className={isOpen ? styles.barActive : styles.bar}></span>
+          <span className={isOpen ? styles.barActive : styles.bar}></span>
+        </button>
+
+        {/* Nav Links */}
+        <nav className={`${styles.nav} ${isOpen ? styles.navOpen : ""}`}>
+          <ul>
+            <li><Link href="/" onClick={() => setIsOpen(false)}>Home</Link></li>
+            <li><Link href="/aboutme" onClick={() => setIsOpen(false)}>About</Link></li>
+            <li><Link href="/services" onClick={() => setIsOpen(false)}>Services</Link></li>
+            <li><Link href="/skills" onClick={() => setIsOpen(false)}>Skills</Link></li>
+            <li><Link href="/contactme" onClick={() => setIsOpen(false)}>Contact</Link></li>
           </ul>
-        </div>
-
-        {/* Mobile Navbar (Hamburger Menu) */}
-        <div className={styles.mobileNavbar}>
-          <Button
-            className={styles.hamburgerBtn}
-            onClick={toggleMenu}
-          >
-            &#9776; {/* Hamburger icon */}
-          </Button>
-
-          {/* Mobile Menu */}
-          {isMenuOpen && (
-            <div className={styles.mobileMenu}>
-              <ul className={styles.mobileNavList}>
-                <li>
-                  <Link href="/">Home</Link>
-                </li>
-                <li>
-                  <Link href="/aboutme">About Me</Link>
-                </li>
-                <li>
-                  <Link href="/services">Services</Link>
-                </li>
-                <li>
-                  <Link href="/skills">Skills</Link>
-                </li>
-                <li>
-                  <Link href="/projects">Projects</Link>
-                </li>
-                <li>
-                  <Link href="/contactme">Contact</Link>
-                </li>
-              </ul>
-            </div>
-          )}
-        </div>
+        </nav>
       </div>
-    </div>
+    </header>
   );
 };
 
-export default Header;
+export default Navbar;

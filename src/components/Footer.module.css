@@ -97,5 +97,15 @@
       grid-template-columns: 1fr;
       text-align: center;
     }
+    .footer {
+      padding: 20px 10px;
+      font-size: 0.875rem;
+    }
+    .title {
+      font-size: 1.5rem;
+    }
+    .text, .link {
+      font-size: 1rem;
+    }
   }
   

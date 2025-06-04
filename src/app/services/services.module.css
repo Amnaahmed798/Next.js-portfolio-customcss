@@ -111,3 +111,25 @@
     }
   }
   
+  @media (max-width: 768px) {
+    .servicesContainer {
+      padding: 20px 10px;
+    }
+
+    .servicesTitle {
+      font-size: 1.5rem;
+    }
+
+    .serviceItem {
+      padding: 1rem;
+    }
+
+    .serviceHeading {
+      font-size: 1rem;
+    }
+
+    .serviceDescription {
+      font-size: 0.9rem;
+    }
+  }
+  
